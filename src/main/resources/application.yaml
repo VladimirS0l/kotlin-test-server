@@ -1,0 +1,16 @@
+server:
+  port: 8070
+
+spring:
+  r2dbc:
+    generate-unique-name: true
+    name: postgres
+    password: 1234
+    url: r2dbc:postgresql://localhost/postgres
+    username: postgres
+  flyway:
+    enabled: true
+    baselineOnMigrate: true
+    url: jdbc:postgresql://localhost:5432/postgres
+    user: postgres
+    password: 1234
